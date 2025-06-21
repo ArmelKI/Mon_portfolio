@@ -1,0 +1,145 @@
+[
+    {
+    "title": "Introduction to Cybersecurity Careers",
+    "provider": "IBM",
+    "date": "21 décembre 2024",
+    "duration": "7h",
+    "category": "cyber",
+    "skills": ["Cybersecurity", "Security+", "CEH", "Information Assurance"],
+    "description": "Rôles et certifications dans les métiers de la cybersécurité.",
+    "pdf": "/uploads/Coursera IBM Introduction to Cybersecurity Careers.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/GJ9E1BTFLH4J"
+    },
+    {
+    "title": "Python Data Analytics",
+    "provider": "Meta",
+    "date": "15 avril 2025",
+    "duration": "22h",
+    "category": "data",
+    "skills": ["Pandas", "Matplotlib", "Data Modeling", "EDA"],
+    "description": "Exploration et visualisation de données avec Python.",
+    "pdf": "/uploads/Coursera  META Python Data Analytics.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/BJHF80SNQQHG"
+    },
+    {
+    "title": "Introduction to Mobile App Development",
+    "provider": "IBM",
+    "date": "5 février 2025",
+    "duration": "9h",
+    "category": "mobile",
+    "skills": ["React Native", "Xcode", "Android Studio", "Development Process"],
+    "description": "Bases du développement d’applications mobiles et outils clés.",
+    "pdf": "/uploads/Coursera  IBM Introduction to Mobile App Development.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/E3S12U5GVS88"
+    },
+    {
+    "title": "Financial Modeling on Excel",
+    "provider": "Udemy - Yassine Rochd",
+    "date": "10 mai 2025",
+    "duration": "14h",
+    "category": "finance",
+    "skills": ["Excel", "Cash Flow", "EBITDA", "Business Plan", "Valuation"],
+    "description": "Techniques de modélisation financière professionnelles sur Excel.",
+    "pdf": "/uploads/Udemy Financial Modeling on Excel Complete finance course on Excel.pdf",
+    "verifyUrl": "https://ude.my/UC-1de45d95-b3d8-4c59-8670-dda364ab8d1a"
+    },
+    {
+    "title": "Mastering Gemini AI",
+    "provider": "Udemy - Skool of AI",
+    "date": "10 mai 2025",
+    "duration": "8h",
+    "category": "ai",
+    "skills": ["Generative AI", "Bard", "Content Generation", "Multilingual AI"],
+    "description": "Application concrète de Bard AI pour contenus, code et analyse.",
+    "pdf": "/uploads/Udemy Mastering Gemini AI_ Google's Versatile Langage Model.pdf",
+    "verifyUrl": "https://ude.my/UC-365d6fc2-2b5a-45d5-863e-9d736419b829"
+    },
+    {
+    "title": "Foundations: Data, Data, Everywhere",
+    "provider": "Google",
+    "date": "26 décembre 2024",
+    "duration": "12h",
+    "category": "data",
+    "skills": ["Data Ethics", "Analytics", "Spreadsheets", "Data Ecosystems"],
+    "description": "Introduction complète aux bases de l’analyse de données.",
+    "pdf": "/uploads/Coursera GOOGLE Foundations Data, Data, Everywhere.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/2R5R79TF8IR0"
+    },
+    {
+    "title": "Foundations of Cybersecurity",
+    "provider": "Google",
+    "date": "14 décembre 2024",
+    "duration": "10h",
+    "category": "cyber",
+    "skills": ["Cyber Attacks", "Incident Response", "Security Ethics"],
+    "description": "Les principes fondamentaux de la cybersécurité.",
+    "pdf": "/uploads/Coursera GOOGLE Fondations of Cybersecurity.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/LCBQEVXO05CJ"
+    },
+    {
+    "title": "Introduction to Security Principles in Cloud Computing",
+    "provider": "Google Cloud",
+    "date": "15 décembre 2024",
+    "duration": "16h",
+    "category": "cloud",
+    "skills": ["Cloud Security", "Identity Access Management", "Infrastructure as Code"],
+    "description": "Principes de sécurité appliqués au cloud computing.",
+    "pdf": "/uploads/Coursera Introduction to Security Principles in Cloud Computing.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/35MHLWAVTYGQ"
+    },
+    {
+    "title": "Introduction to Data Analytics in Google Cloud",
+    "provider": "Google Cloud",
+    "date": "26 décembre 2024",
+    "duration": "15h",
+    "category": "data",
+    "skills": ["Cloud Storage", "Big Data", "Data Governance"],
+    "description": "Analyse de données avec les outils du Google Cloud.",
+    "pdf": "/uploads/Coursera Introduction to Data Analytics in Google Cloud.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/0NL74W8AFFEZ"
+    },
+    {
+    "title": "Introduction to Data Analytics",
+    "provider": "Meta",
+    "date": "4 janvier 2025",
+    "duration": "17h",
+    "category": "data",
+    "skills": ["KPIs", "Data Storytelling", "Data Quality", "OSEMN"],
+    "description": "Initiation à l’analyse et au traitement de données métiers.",
+    "pdf": "/uploads/Coursera META Introduction to Data Analytics.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/F8HJ1ADGPWFK"
+    },
+    {
+    "title": "Data Analysis with Spreadsheets and SQL",
+    "provider": "Meta",
+    "date": "6 janvier 2025",
+    "duration": "26h",
+    "category": "data",
+    "skills": ["Google Sheets", "Tableau", "SQL", "Pivot Tables"],
+    "description": "Analyse de données à l’aide de SQL et de Google Sheets.",
+    "pdf": "/uploads/Coursera META Data Analysis with Spreadsheets and SQL.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/H8P14NYBI4GC"
+    },
+    {
+    "title": "Connect and Protect: Networks and Network Security",
+    "provider": "Google",
+    "date": "6 janvier 2025",
+    "duration": "11h",
+    "category": "cyber",
+    "skills": ["Firewall", "VPN", "Intrusion Prevention", "SIEM"],
+    "description": "Protection des réseaux et surveillance des intrusions.",
+    "pdf": "/uploads/Coursera GOOGLE Connect and Protect Networks and Network.pdf",
+    "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/5GBMMOTVVQGL"
+    },
+    {
+    "title": "IA pour tous",
+    "provider": "Université Numérique Cheick Hamidou KANE",
+    "date": "2025",
+    "duration": "4h",
+    "category": "ai",
+    "skills": ["Intelligence Artificielle", "Culture Numérique"],
+    "description": "Comprendre les bases de l’IA à destination du grand public.",
+    "pdf": "/uploads/FORCE-N Certificat IA pour tous.pdf",
+    "verifyUrl": "https://formation.force-n.sn/mod/customcert/verify_certificate.php?contextid=550710&code=JrwDFBz1Mm&qrcode=1"
+    }
+]

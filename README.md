@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+```markdown
+# 🌐 Portfolio de Armel Stéphane Novak KI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur mon portfolio personnel. Il a pour objectif de présenter mes projets, certifications, compétences techniques ainsi qu’un système d’administration en temps réel avec des fonctionnalités dynamiques.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧩 Fonctionnalités principales
 
-### `npm start`
+- **📄 Pages dynamiques :** expériences, certifications, compétences, contact
+- **🗂️ Système de certifications :**
+  - Filtrage par catégorie (IA, Data, Cyber, etc.)
+  - Ajout de fichier PDF téléchargeable (certificat)
+  - Lien de vérification vers les plateformes (Coursera, Udemy…)
+- **🧑‍💻 Espace admin sécurisé :**
+  - Ajout de certifications
+  - Upload de CV et documents
+  - Suppression, filtrage, gestion dynamique
+- **📨 Formulaire de contact :**
+  - Envoi d’un message personnalisé
+  - Upload facultatif d’un fichier
+  - Réception directe dans ma boîte Gmail via Nodemailer
+- **📬 Notifications automatiques** à chaque upload
+- **🎨 Design responsive** avec **dark mode** natif
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies utilisées
 
-### `npm test`
+### Front-End
+- React.js
+- Tailwind CSS
+- Formspree / Fetch
+- React Icons
+- Framer Motion (optionnel)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Back-End
+- Node.js + Express
+- Nodemailer (e-mail automatique)
+- Multer (upload de fichiers)
+- Stockage local (`/uploads`)
+- Système CRUD sur fichier JSON
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Lancer le projet en local
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📦 Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Frontend
+cd client
+npm install
 
-### `npm run eject`
+# Backend
+cd ../server
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ▶️ Lancer le projet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Backend (port 5000)
+cd server
+npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Frontend (port 3000)
+cd ../client
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Puis accéder à :
+- 🖥️ Frontend : http://localhost:3000
+- 🧠 API : http://localhost:5000/api/certifications
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Arborescence rapide
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+client/
+│
+├─ pages/
+│   ├─ Certifications.jsx
+│   ├─ Skills.jsx
+│   └─ Contact.jsx
+│
+├─ components/
+│   ├─ AdminCertifications.jsx
+│   ├─ AdminFichiers.jsx
+│   └─ TechIcon.jsx
 
-### Code Splitting
+server/
+├─ routes/
+│   └─ certifications.js
+├─ uploads/
+├─ data/
+│   └─ certifications.json
+└─ server.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📬 Me contacter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- 📧 Email : kiarmelstephanenovak@gmail.com
+- 🌍 Site : [à venir…]
 
-### Making a Progressive Web App
+> Certaines routes (admin, upload) sont restreintes pour des raisons de sécurité.
+> Un accès temporaire peut être fourni pour la démo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📌 À venir
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Authentification pour l’interface admin
+- Connexion à une base MongoDB
+- Déploiement sur Render / Vercel
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+✨ Merci d’avoir exploré mon univers de développeur passionné !
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

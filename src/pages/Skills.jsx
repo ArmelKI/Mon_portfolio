@@ -1,50 +1,110 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
+import TechIcon from "../components/TechIcon";
 
 const skills = [
-    { name: "Python", category: "Langage", color: "bg-yellow-500 hover:bg-yellow-600" },
-    { name: "C", category: "Langage", color: "bg-blue-500 hover:bg-blue-600" },
-    { name: "JavaScript", category: "Langage", color: "bg-green-500 hover:bg-green-600" },
-    { name: "SQL", category: "Langage", color: "bg-red-500 hover:bg-red-600" },
-    { name: "React", category: "Framework", color: "bg-purple-500 hover:bg-purple-600" },
-    { name: "Node.js", category: "Framework", color: "bg-gray-500 hover:bg-gray-600" },
-    { name: "Django", category: "Framework", color: "bg-indigo-500 hover:bg-indigo-600" },
+    {
+        section: "💻 Développement Logiciel",
+        description:
+            "Conception d’applications robustes, architecture modulaire et utilisation raisonnée des langages pour résoudre des problèmes concrets.",
+        stack: [
+            { name: "JavaScript", icon: "js", desc: "Langage principal pour logique front & back moderne." },
+            { name: "Python", icon: "python", desc: "Manipulation de données, scripting et prototypage IA." },
+            { name: "C", icon: "c", desc: "Optimisation bas-niveau, logique algorithmique et mémoire." },
+            { name: "Git", icon: "git", desc: "Versioning, branches, merge, travail collaboratif propre." },
+        ],
+    },
+    {
+        section: "🌐 Front-End Web",
+        description:
+            "Interfaces interactives et accessibles, avec design system structuré, responsive, animations modernes.",
+        stack: [
+            { name: "HTML", icon: "html", desc: "Structure sémantique et SEO-friendly." },
+            { name: "CSS", icon: "css", desc: "Mise en page, transitions, responsive clean." },
+            { name: "React", icon: "react", desc: "Composants dynamiques, hooks, state/context API." },
+            { name: "Tailwind", icon: "tailwind", desc: "Design ultra-rapide avec classes utilitaires." },
+        ],
+    },
+    {
+        section: "🛠️ Back-End & API",
+        description:
+            "Architecture serveur, gestion de fichiers, envois automatisés, sécurisation des échanges.",
+        stack: [
+            { name: "Node.js", icon: "node", desc: "Environnement rapide, scalable, modulaire." },
+            { name: "Express", icon: "express", desc: "Routing, middlewares, APIs RESTful." },
+            { name: "Multer", icon: "multer", desc: "Gestion avancée des fichiers (renommage, stockage)." },
+            { name: "Nodemailer", icon: "email", desc: "Envois automatiques de mails avec pièces jointes." },
+        ],
+    },
+    {
+        section: "📊 Data Science & IA",
+        description:
+            "Analyse, visualisation, Machine Learning, pipelines de transformation et IA générative.",
+        stack: [
+            { name: "Pandas", icon: "pandas", desc: "Nettoyage, manipulation et fusion de datasets." },
+            { name: "NumPy", icon: "numpy", desc: "Calcul numérique vectorisé, performance optimisée." },
+            { name: "Scikit-learn", icon: "sklearn", desc: "Modèles prédictifs, classification, pipelines." },
+            { name: "TensorFlow", icon: "tensorflow", desc: "Apprentissage profond, réseaux neuronaux." },
+            { name: "Plotly", icon: "plotly", desc: "Visualisation interactive, dashboards analysables." },
+        ],
+    },
+    {
+        section: "☁️ Cloud & Déploiement",
+        description:
+            "Hébergement public, APIs en ligne, accessibilité mondiale, CI/CD minimaliste.",
+        stack: [
+            { name: "Render", icon: "render", desc: "Déploiement facile d’APIs Express (certifications, upload…)" },
+            { name: "Vercel", icon: "vercel", desc: "Hosting du front avec CDN rapide et auto-build." },
+        ],
+    },
 ];
 
+const fadeIn = {
+    initial: { opacity: 0, y: 30 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+    viewport: { once: true },
+};
+
 const Skills = () => {
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            if (scrollY > 100) {
-                setVisible(true);
-            }
-        };
-        
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
-        <div className={`min-h-screen bg-gray-900 text-white flex flex-col items-center p-10 ${visible ? "fade-in visible" : "fade-in"}`}>
-            <h2 className="text-4xl font-bold mb-12 hover:text-cyan-400 transition duration-300">
-                ⚡ Compétences
-            </h2>
+        <section className="bg-gray-950 text-white py-16 px-6 md:px-20">
+            <motion.h2
+                {...fadeIn}
+                className="text-4xl font-bold text-cyan-400 mb-12 text-center"
+            >
+                🧠 Compétences Techniques
+            </motion.h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-                {skills.map((skill, index) => (
-                    <div
-                        key={index}
-                        className={`p-6 rounded-xl shadow-lg ${skill.color} text-center hover:scale-105 transition-all duration-300 cursor-pointer`}
+            <div className="space-y-16">
+                {skills.map((section, i) => (
+                    <motion.div
+                        key={i}
+                        {...fadeIn}
+                        transition={{ ...fadeIn.transition, delay: i * 0.2 }}
+                        className="space-y-4"
                     >
-                        <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-                        <p className="text-sm text-gray-100 bg-black/20 rounded-full px-3 py-1 inline-block">
-                            {skill.category}
-                        </p>
-                    </div>
+                        <h3 className="text-2xl font-semibold text-cyan-300">{section.section}</h3>
+                        <p className="text-gray-400">{section.description}</p>
+
+                        <ul className="mt-4 grid sm:grid-cols-2 gap-4">
+                            {section.stack.map((skill, j) => (
+                                <li
+                                    key={j}
+                                    className="flex items-start gap-3 bg-gray-900/50 hover:bg-gray-800/80 transition-all p-4 rounded-lg"
+                                >
+                                    <TechIcon name={skill.icon} className="text-2xl shrink-0 mt-1" />
+                                    <div>
+                                        <p className="font-medium text-white">{skill.name}</p>
+                                        <p className="text-sm text-gray-400">{skill.desc}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </motion.div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
